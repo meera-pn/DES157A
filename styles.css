@@ -1,0 +1,88 @@
+h1 {
+    text-align: center;
+    font-family: "Archivo Black";
+    color: transparent; 
+    background-image: linear-gradient(90deg, #88cdf1, #4480f1, #ae7dfc,  #A5CDE9, #F0E05C, #A5CDE9, #ae7dfc, #4480f1, #88cdf1); 
+    background-size: 200%; 
+    background-clip: text; 
+    animation: gradientMove 5s infinite; 
+    padding: 40px;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+
+h2 {
+    text-align: center;
+    color: rgb(252, 252, 250);
+    font-family: "Archivo Black";
+    font-weight: 300;
+}
+
+
+body {
+    background-color: #36415B;
+}
+
+.threeColDisplay {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.threeColDisplay>*{
+    width: calc(100%/3);
+    padding: 1rem;
+}
+
+.col{
+    background-color: #5A6D99;
+    margin: 10px;
+    padding: 10px;
+    color: rgb(252, 252, 250, 0.6);
+    border-radius: 15px;
+    text-decoration: none;
+    font-family: "Afacad Flux";
+    font-size: 20px;
+}
+
+.col:hover{
+    transform: scale(1.02);
+    background-color: #6A7BA3; 
+}
+
+a {
+    color: rgb(252, 252, 250);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #FEE1A7;
+    transition: .1s;
+}
+
+.archivo-black-regular {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.afacad-flux {
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 70;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
+  
+  
