@@ -59,6 +59,15 @@ body {
     background-color: #6A7BA3; 
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    font-family: "Afacad Flux";
+}
+
 a {
     color: rgb(252, 252, 250);
     text-decoration: none;
