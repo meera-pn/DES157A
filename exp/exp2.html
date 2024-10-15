@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experimentation</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <style>
+        body {
+            background-color: black; 
+        }
+    </style>
+    
+    <script>
+        color = getColor();
+        console.log(color);
+        var response = prompt("What color am I thinking of?");
+        if(color == response){
+            document.body.style.backgroundColor = color; 
+            var r=confirm("You are correct! Click OK to play again");
+            if (r==true){
+                window.location.reload();
+            }
+        }
+        else{
+            var r=confirm("You are incorrect :( Click OK to play again");
+            if (r==true){
+                window.location.reload();
+            }
+        }
+
+        function getColor(){
+            var colors = ["yellow", "blue", "red"];
+            const randomIndex = Math.floor(Math.random() * colors.length);
+            const color = colors[randomIndex]; 
+            return color;
+        }
+    </script>
+    
+</body>
+</html>
+
+<!--Idea Credit: Krithika Govind-->
+<!--This code prompts the user for a color, and compares it to a randomly selected color in the code. If the colors match up, it
+    will display a congrats message, turn the background that color, and display an option to play again. Otherwise the color does not
+    change and it displays in "incorrect" message, with the option to play again.-->
