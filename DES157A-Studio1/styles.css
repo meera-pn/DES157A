@@ -1,0 +1,78 @@
+.sour-gummy-font {
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    margin-left: 70px;  /* Sets the left margin to 30px */
+    margin-top: 30px;   /* Sets the top margin to 30px */
+    padding: 40px;
+    background-color: #14222e;
+    color: aliceblue;
+    font-family: 'Sour Gummy';
+}
+
+h2 {
+    text-align: center;
+    color: aliceblue;
+}
+
+html, body {
+    height: 100%;  
+    margin: 0;     
+    padding: 0;    
+}
+
+body {
+    background-image: url(madlibs-img.png);
+    background-size: cover;  /* Cover the entire area of the body */
+    background-position: center;  /* Center the background image */
+    background-repeat: no-repeat;  /* Prevent the image from repeating */
+}
+
+
+input {
+    background-color: #A2C0D9;  /* Example background color */
+}
+
+button {
+    background-color: #A2C0D9;
+}
+
+
+#overlay {
+    width: 300px;
+    height: 100vh;
+    margin-left: 2000px;
+}
+
+#overlay article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(20, 34, 46, 0.7);
+    color: aliceblue;
+    padding: 20px;
+    width: 500px;
+    height: 40vh;
+    position: absolute;
+    top: 46.5%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-family: 'Sour Gummy';
+}
+
+.hidden {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
