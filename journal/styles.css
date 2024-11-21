@@ -6,7 +6,6 @@ article {
 }
 
 p {
-    display: flex;
     width: 500px;
     line-height: 2;
 }
