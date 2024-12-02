@@ -1,0 +1,124 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C1808;
+    position: relative;
+}
+
+.gallery {
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.gallery-image, .cd-image {
+    display: block; 
+}
+
+.gallery-image {
+    z-index: 2; 
+    position: relative; 
+    width: 300px;
+}
+
+
+@keyframes spin {
+    from { transform: translateX(80%) rotate(0deg); }
+    to { transform: translateX(80%) rotate(360deg); }
+}
+
+.cd-image {
+    position: absolute;
+    top: 0;
+    right: 0; 
+    transform: translateX(0%); 
+    transform-origin: 50% 50%; 
+    transition: transform 0.5s ease, opacity 0.5s ease; 
+    z-index: 1; 
+    opacity: 0; 
+    width: 275px
+}
+
+.cd-image.active {
+    transform: translateX(120%); 
+    opacity: 1; 
+}
+
+.cd-image.active:hover {
+    animation: spin 2s linear infinite; 
+}
+
+.arrow {
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    z-index: 10; 
+    padding: 0;
+}
+
+.arrow img {
+    display: block;
+    width: 50px;
+    height: auto;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.additional-image {
+    display: none;
+    position: fixed; 
+    z-index: 50;
+    width: 250px;
+}
+
+
+#orville1 { top: 20%; left: 13.5%;}
+#orville2 { top: 65%; left: 69%; }
+#orville3 { top: 10%; left: 77%; }
+#orville4 { top: 57%; left: 21%; }
+#sarah1 { top: 18%; left: 10%; }
+#sarah2 { top: 55%; left: 74%; }
+#sarah3 { top: 13%; left: 77%; }
+#sarah4 { top: 52%; left: 26%; }
+#sarah5 { top: 52%; left: 10%; }
+#sarah6 { top: 7%; left: 65%; }
+#sarah7 { top: 46%; left: 77%; }
+#orville5 { top: 12%; left: 63%; }
+#orville6 { top: 73%; left: 56%; }
+#orville7 { top: 10%; left: 8%; }
+
+.cover-photo {
+    display: block;
+    width: 400px;
+    margin: auto; 
+    animation: wiggle 1s infinite; 
+}
+
+@keyframes wiggle {
+    0%, 100% { transform: rotate(-1deg); }
+    50% { transform: rotate(1deg); }
+}
+
+
+
+
+
