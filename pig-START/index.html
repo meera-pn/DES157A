@@ -1,0 +1,79 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of PIG</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Game of PIG</h1>
+    <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.</p> 
+    <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
+
+    <div id="gamecontrol">
+        <h2>Start a Game</h2>
+        <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
+    </div>
+
+    <div id="game">
+        <p id="player-turn">Welcome! Press "Start" to begin.</p>
+        <div id="dice-rolls">
+            <img id="die1" src="images/di1_1.png" alt="Die 1">
+            <img id="die2" src="images/di2_1.png" alt="Die 2">
+        </div>
+    </div>
+    <div id="actions"></div>
+    <div id="score"></div>
+    
+</body>
+</html>
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of PIG</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="instructions" class="screen">
+        <h1>Game of PIG</h1>
+        <p>The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one." If this happens, this player's turn is over, and it is the other player’s turn.</p>
+        <p>If the current player feels their luck is running thin, they can pass to the other player. The first player to reach 30 points wins.</p>
+        <p>If you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that!</p>
+        <button id="startgame">Start the Game</button>
+    </div>
+
+    <div id="game" class="screen hidden">
+        <h1>Game of PIG</h1>
+        <div id="gamecontrol">
+            <button id="quit">Quit</button>
+        </div>
+
+        <p id="player-turn">Welcome! Press "Start" to begin.</p>
+
+        <div id="dice-container">
+            <img id="die1" src="images/di1_1.png" alt="Die 1">
+            <div id="action-area">
+                <button id="roll">Roll the Dice</button>
+                <div id="roll-options" class="hidden">
+                    <button id="rollAgain">Roll Again</button>
+                    <button id="pass">Pass</button>
+                </div>
+            </div>
+            <img id="die2" src="images/di2_1.png" alt="Die 2">
+        </div>
+
+        <div id="score"></div>
+    </div>
+</body>
+</html>
